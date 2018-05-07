@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %} Users {% endblock %}
+
+{% block content %}
+    <h1>This is the User page</h1>
+    {# This is the comment for template #}
+    {% if username == "harry" %}
+      <h2>Hello Professor!</h2>
+    {% else %}
+      <h2>Hello Student {{username}}</h2>
+    {% endif %}
+{% endblock %}
